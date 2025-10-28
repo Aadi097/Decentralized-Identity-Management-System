@@ -1,0 +1,30 @@
+{
+  "name": "decentralized-identity-management",
+  "version": "1.0.0",
+  "description": "Blockchain-based Decentralized Identity Management System",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "verify": "hardhat run scripts/verify.js --network mumbai",
+    "interact": "hardhat run scripts/interact.js --network mumbai"
+  },
+  "keywords": [
+    "blockchain",
+    "identity",
+    "decentralized",
+    "did"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.12.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "ethers": "^5.7.2"
+  }
+}
